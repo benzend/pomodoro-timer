@@ -99,6 +99,7 @@ resetBtn.addEventListener("click", () => {
       if (nextInterval) {
         timerOrderIndex++;
         setTimer(timerOrder[timerOrderIndex]);
+        alert("Next Timer is being Activated");
         nextInterval = false;
       }
       totalTimeWorked.innerHTML = `${timeWorked.hours}h ${timeWorked.minutes}m ${timeWorked.seconds}s `;
