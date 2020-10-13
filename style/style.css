@@ -1,0 +1,101 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  font-size: 2rem;
+  background: url("https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?cs=srgb&dl=pexels-leo-cardelli-1236701.jpg&fm=jpg") no-repeat center center/cover;
+  color: #f0f0f0;
+  text-shadow: 0 0 7px black;
+}
+
+#countdown-clock-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#countdown-clock-container #middle-container {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+#countdown-clock-container > .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 10px;
+}
+
+#countdown-clock-container > .item #change-bg-btn {
+  padding: 10px;
+  font-size: 1.2rem;
+  border: solid white 1px;
+  background: none;
+  border-radius: 10px;
+  color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#countdown-clock-container > .item #change-bg-btn:hover {
+  cursor: pointer;
+  background: radial-gradient(white, gray);
+  color: black;
+}
+
+#countdown-clock-container > .item #change-bg-btn:active {
+  background: radial-gradient(dimgray, #858585);
+}
+
+#countdown-clock-container > .item #play-pause-container > .item {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#countdown-clock-container > .item #play-pause-container > .item:hover {
+  cursor: pointer;
+  text-shadow: 0 0 20px black;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#countdown-clock-container > .item #play-pause-container > .item i {
+  padding: 0;
+}
+
+#reset-container p {
+  margin: 0;
+}
+
+#reset-container #reset {
+  padding: 5px;
+  margin-top: 50px;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  border-radius: 50%;
+}
+
+#reset-container #reset:hover {
+  cursor: pointer;
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */
