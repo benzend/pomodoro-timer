@@ -77,7 +77,6 @@ resetBtn.addEventListener("click", () => {
     hours: 0,
   };
   timerOrderIndex = 0;
-  countdownClock.innerHTML = "0h 0m 0s";
   clearInterval(myInterval);
 });
 // updating interval
@@ -113,7 +112,9 @@ function setTimer({ minutes, description, isWorking }) {
 
   let myInterval = setInterval(() => {
     if (isReset) {
-      seconds = 60;
+      seconds = 0;
+      minutes = 25;
+      countdownClock.innerHTML = "25m 0s";
       isReset = false;
     }
     if (isPaused) {
